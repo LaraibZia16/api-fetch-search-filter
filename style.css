@@ -1,0 +1,304 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   GLOBAL
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#13071f;
+    color:#fff;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    background:#1d0f2f;
+    padding:15px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar-brand{
+    color:#fff !important;
+    font-size:1.5rem;
+    font-weight:600;
+}
+
+.navbar-brand i{
+    color:#9d4edd;
+    margin-right:8px;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    padding:70px 20px 40px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:700;
+    color:#ffffff;
+}
+
+.hero p{
+    color:#d4d4d4;
+    margin-top:15px;
+    font-size:1.05rem;
+}
+
+/* ===========================
+   CONTROLS
+=========================== */
+
+.controls{
+    padding-bottom:40px;
+}
+
+.form-control,
+.form-select{
+
+    height:55px;
+    border:none;
+    border-radius:12px;
+    background:#24143c;
+    color:#fff;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    background:#24143c;
+    color:#fff;
+
+    box-shadow:0 0 10px #7b2cbf;
+
+    border:none;
+}
+
+.form-control::placeholder{
+    color:#cfcfcf;
+}
+
+/* ===========================
+   LOADER
+=========================== */
+
+.loader{
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px;
+
+}
+
+.loader p{
+    margin-top:15px;
+}
+
+/* ===========================
+   PRODUCT CARD
+=========================== */
+
+.product-card{
+
+    background:#23103b;
+
+    border-radius:18px;
+
+    padding:20px;
+
+    height:100%;
+
+    transition:.35s;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+
+}
+
+.product-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(157,78,221,.45);
+
+}
+
+.product-img{
+
+    width:100%;
+    height:220px;
+
+    object-fit:contain;
+
+    margin-bottom:20px;
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:15px;
+
+}
+
+.category{
+
+    display:inline-block;
+
+    background:#6d28d9;
+
+    padding:5px 12px;
+
+    border-radius:30px;
+
+    font-size:13px;
+
+    margin-bottom:12px;
+
+}
+
+.product-title{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    min-height:55px;
+
+}
+
+.product-price{
+
+    color:#00ff95;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin:15px 0;
+
+}
+
+.rating{
+
+    color:#ffc107;
+
+    margin-bottom:15px;
+
+}
+
+.btn-purple{
+
+    width:100%;
+
+    border:none;
+
+    padding:12px;
+
+    background:#7b2cbf;
+
+    color:white;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.btn-purple:hover{
+
+    background:#9d4edd;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#1d0f2f;
+
+    margin-top:70px;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#d8d8d8;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.hero h1{
+
+    font-size:2.5rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+    padding-top:50px;
+
+}
+
+.hero h1{
+
+    font-size:2rem;
+
+}
+
+.hero p{
+
+    font-size:.95rem;
+
+}
+
+.product-img{
+
+    height:180px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+    font-size:1.8rem;
+
+}
+
+}
